@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZeroWaste | Home</title>  
+    
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="img/reduce-icon.png">  
+    
+    <!-- Google Fonts preconnection for performance optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Roboto font family import for consistent typography -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+    
+    <!-- External CSS stylesheets - organized by component -->
+    <link rel="stylesheet" href="css/body.css">        <!-- Global body styles -->
+    <link rel="stylesheet" href="css/navbar.css">      <!-- Navigation bar styles -->
+    <link rel="stylesheet" href="css/hero.css">        <!-- Hero section styles -->
+    <link rel="stylesheet" href="css/stats.css">       <!-- Statistics section styles -->
+    <link rel="stylesheet" href="css/principles.css">  <!-- Zero-waste principles styles -->
+    <link rel="stylesheet" href="css/initiatives.css"> <!-- Initiatives showcase styles -->
+    <link rel="stylesheet" href="css/footer.css">      <!-- Footer styles -->
+  </head>
+  
+  <body>
+    <!-- Site header containing main navigation -->
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="goals.html">Goals</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+      <!-- Hero section - main landing area with call-to-action -->
+      <section class="hero-section">
+        <!-- Hero image: Source - FreePik -->
+        <img src="img/hero.png" alt="eco-city-image">
+
+        <!-- Hero text content and call-to-action buttons -->
+        <div class="hero-text-container">
+          <h1 class="hero-text">
+            Reducing&nbsp;our&nbsp;waste  <!-- Prevent line breaks between words that should stay together-->
+            <span class="text-green">together</span>, one choice at a time.
+          </h1>
+          <p>
+            Let's take the lead to 
+            <span style="color:#59b859">reduce</span>,
+            <span style="color:#59b859">reuse</span> and
+            <span style="color:#59b859">recycle</span> waste together,
+            as <strong>one</strong> planet.
+          </p>
+          
+          <!-- Action buttons for user engagement -->
+          <div class="button-container">
+            <a href="  https://tinyurl.com/ZeroWaste-Community" target="_blank" class="btn join-now">Join Now</a>
+            <a href="about.html" class="btn learn-more">Learn More</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Statistics section - waste data and visualizations -->
+      <section class="stats-section">
+        <div class="stats-container"> 
+          <h2>Annual Waste by the Numbers</h2>
+          
+          <!-- Grid layout for statistics and info card -->
+          <div class="stats-grid">
+            <!-- Left side: Statistical data boxes -->
+            <div class="stats-rows">
+              <!-- First row of statistics -->
+              <div class="stats-row">
+                <div class="stat-box">
+                  <h3>2.12B Tons</h3>
+                  <p>of waste is produced by humans</p>
+                </div>
+                <div class="stat-box">
+                  <h3>11M Tons</h3>
+                  <p>of plastic gets disposed into the ocean</p>
+                </div>
+              </div>
+              
+              <!-- Second row of statistics -->
+              <div class="stats-row">
+                <div class="stat-box">
+                  <h3>1.3B Tons</h3>
+                  <p>of food which could have fed 3B people, is wasted</p>
+                </div>
+                <div class="stat-box">
+                  <h3>0.74 kg</h3>
+                  <p>of waste is produced by a person each day</p>
+                </div>
+              </div>
+              
+              <!-- Third row of statistics with progress bar -->
+              <div class="stats-row">
+                <div class="stat-box">
+                  <h3>9%</h3>
+                  <p>of plastic waste produced is actually recycled</p>
+                  <!-- Visual progress bar showing recycling percentage -->
+                  <div class="stat-progress">
+                    <div class="stat-progress-bar"></div>
+                  </div>
+                </div>
+                <div class="stat-box">
+                  <h3>11%</h3>
+                  <p>of global waste originates from households</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Right side: Contextual information card -->
+            <div class="stat-card">
+              <p>
+                This crisis demands immediate attention, <strong class="highlight-text">billions of tons</strong> of waste are polluting our planet, and with a <strong class="highlight-text">rapidly</strong> growing population, it is expected to <strong class="highlight-text">increase</strong>. 
+                <br><br>
+                What we can do as consumers is to <strong class="highlight-text">reduce</strong> our household waste, as <strong class="highlight-text">11% of total waste</strong> originates from it, through small steps, we will be able to reverse these trends, creating a sustainable future!
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Chart visualization section -->
+        <section class="chart-section">
+          <div class="chart-container">
+            <div class="chart-card">
+              <div class="chart-layout">
+                <!-- Interactive donut chart showing waste composition -->
+                <div class="donut-chart-container">
+                  <div class="donut-chart">
+                    <div class="donut-segments"></div>
+                    <!-- Center text displaying total waste -->
+                    <div class="donut-center-text">
+                      <h3>2.12B</h3>
+                      <p>Tons of waste annually</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Chart legend explaining waste categories -->
+                <div class="chart-legend">
+                  <h3 class="legend-title">Annual Waste Composition</h3>
+                  
+                  <!-- Organic waste legend item -->
+                  <div class="legend-item">
+                    <div class="legend-color color-organic"></div>
+                    <div class="legend-text">
+                      <span>Organic Waste</span>
+                      <span class="legend-percent">44%</span>
+                    </div>
+                  </div>
+                  
+                  <!-- Paper & cardboard legend item -->
+                  <div class="legend-item">
+                    <div class="legend-color color-paper"></div>
+                    <div class="legend-text">
+                      <span>Paper & Cardboard</span>
+                      <span class="legend-percent">24%</span>
+                    </div>
+                  </div>
+                  
+                  <!-- Plastic waste legend item -->
+                  <div class="legend-item">
+                    <div class="legend-color color-plastic"></div>
+                    <div class="legend-text">
+                      <span>Plastic</span>
+                      <span class="legend-percent">11%</span>
+                    </div>
+                  </div>
+                  
+                  <!-- Glass waste legend item -->
+                  <div class="legend-item">
+                    <div class="legend-color color-glass"></div>
+                    <div class="legend-text">
+                      <span>Glass</span>
+                      <span class="legend-percent">10%</span>
+                    </div>
+                  </div>
+                  
+                  <!-- Metal waste legend item -->
+                  <div class="legend-item">
+                    <div class="legend-color color-metal"></div>
+                    <div class="legend-text">
+                      <span>Metal</span>
+                      <span class="legend-percent">5%</span>
+                    </div>
+                  </div>
+                  
+                  <!-- Other waste types legend item -->
+                  <div class="legend-item">
+                    <div class="legend-color color-other"></div>
+                    <div class="legend-text">
+                      <span>Other</span>
+                      <span class="legend-percent">6%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Zero-waste principles section -->
+      <section class="principles-section">
+        <div class="principles-container">
+          <h2 class="principles-heading">Zero-Waste Principles</h2>
+          
+          <!-- Grid of principle icons and descriptions -->
+          <div class="principles-grid">
+            <!-- Refuse principle -->
+            <figure>
+              <div class="principle-icon-wrapper">
+                <!-- Icon source: ChatGPT -->
+                <img src="img/refuse-icon.png" alt="Refuse Icon">
+              </div>
+              <figcaption>
+                <strong>Refuse</strong>
+                <p>Say no to what you don't need.</p>
+              </figcaption>
+            </figure>
+            
+            <!-- Reduce principle -->
+            <figure>
+              <div class="principle-icon-wrapper">
+                <!-- Icon source: ChatGPT -->
+                <img src="img/reduce-icon.png" alt="Reduce Icon">
+              </div>
+              <figcaption>
+                <strong>Reduce</strong>
+                <p>Cut down on what you consume.</p>
+              </figcaption>
+            </figure>
+            
+            <!-- Reuse principle -->
+            <figure>
+              <div class="principle-icon-wrapper">
+                <!-- Icon source: ChatGPT -->
+                <img src="img/reuse-icon.png" alt="Reuse Icon">
+              </div>
+              <figcaption>
+                <strong>Reuse</strong>
+                <p>Use things again and again.</p>
+              </figcaption>
+            </figure>
+            
+            <!-- Recycle principle -->
+            <figure>
+              <div class="principle-icon-wrapper">
+                <!-- Icon source: ChatGPT -->
+                <img src="img/recycle-icon.png" alt="Recycle Icon">
+              </div>
+              <figcaption>
+                <strong>Recycle</strong>
+                <p>Give items a second life.</p>
+              </figcaption>
+            </figure>
+            
+            <!-- Composting principle -->
+            <figure>
+              <div class="principle-icon-wrapper">
+                <!-- Icon source: ChatGPT -->
+                <img src="img/composting-icon.png" alt="Composting Icon">
+              </div>
+              <figcaption>
+                <strong>Composting</strong>
+                <p>Turn scraps into greenery.</p>
+              </figcaption>
+            </figure>
+          </div>
+          
+          <!-- Principle application information card -->
+          <div class="info-card principles-info">
+            <p>
+              These principles are tools for you to bring your Zero-Waste lifestyle into action! 
+              By <span style="color:#e63946">refusing</span> unnecessary items, 
+              <span style="color:#59b859">reducing</span> over-consumption, 
+              <span style="color:#59b859">reusing</span>, 
+              <span style="color:#59b859">recycling</span> right and 
+              <span style="color:#8B4513">composting</span> organic waste – 
+              you can <strong>significantly</strong> decrease your household's wastage! 
+              Every single choice matters, watch how these small, but consistent actions 
+              transform your lifestyle into a Zero-Waste lifestyle!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Real-world zero-waste initiatives showcase -->
+      <section class="zero-waste-initiatives">
+        <h2>Click for Inspiring Zero-Waste Initiatives!</h2>
+        
+        <!-- Row of initiative cards linking to external resources -->
+        <div class="card-row">
+          <!-- Kamikatsu, Japan initiative -->
+          <a href="https://reasonstobecheerful.world/kamikatsu-japan-zero-waste-recycling-town/" class="card-link" target="_blank">
+            <div class="card">
+              <!-- Image source: ABC News -->
+              <img src="img/kamikatsu.jpg" alt="Kamikatsu, Japan">
+              <div class="card-content">
+                <h3>Kamikatsu, Japan</h3>
+                <p>
+                  Since 2003, Kamikatsu replaced incineration with a 45-category recycling system, achieving over 80% waste recycling.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Singapore Polytechnic initiative -->
+          <a href="https://www.straitstimes.com/singapore/environment/polytechnic-teams-up-with-recycling-industry-to-target-zero-waste-goal/" class="card-link" target="_blank">
+            <div class="card">
+              <!-- Image source: Singapore Polytechnic official website -->
+              <img src="img/sp-logo.png" alt="Singapore Polytechnic">
+              <div class="card-content">
+                <h3>Singapore Polytechnic</h3>
+                <p>
+                  SP researchers recycled incineration ash into foam glass insulation, partnering with the Waste Management & Recycling Association.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Roubaix, France initiative -->
+          <a href="https://www.roubaixzerodechet.fr/en/zero-waste-in-roubaix/they-did-it/" class="card-link" target="_blank">
+            <div class="card">
+              <!-- Image source: Roubaix Zero Dechet -->
+              <img src="img/roubaix.jpg" alt="Roubaix, France">
+              <div class="card-content">
+                <h3>Roubaix, France</h3>
+                <p>
+                  Since 2014, Roubaix launched a Zero Waste Challenge, with 70% of families cutting waste by at least 50%, and 25% reducing it by over 80%.
+                </p>
+              </div>
+            </div>
+          </a>     
+        </div>
+      </section>
+    </main>
+    
+    <!-- Site footer with navigation links and copyright -->
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Footer navigation links -->
+        <div class="links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="goals.html">Goals</a>
+        </div>
+        <!-- Copyright notice -->
+        <p>&copy; 2025 Moiz ZeroWaste. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
